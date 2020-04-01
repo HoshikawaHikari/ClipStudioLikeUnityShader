@@ -1,0 +1,8 @@
+{
+  "name": "com.hoshihalab.clipstudio-like-unity-shader",
+  "displayName": "ClipStudioLikeUnityShader",
+  "version": "0.0.1",
+  "unity": "2019.3",
+  "description": "CLIP STUDIO like unity shader.",
+  "type": "library"
+}

@@ -120,7 +120,6 @@ Shader "ClipStudioLike/UI/11_加算"
                     grabUV.y = grabUV.y * _ProjectionParams.x;
                     half3 srcColor = tex2D(_GrabTexture, grabUV).rgb;
 
-                    // TODO: 加算(発光)との区別化
                     color.rgb = srcColor + color.rgb;
 
                     return color;

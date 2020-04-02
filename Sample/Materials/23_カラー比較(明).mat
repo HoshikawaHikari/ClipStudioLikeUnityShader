@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test
-  m_Shader: {fileID: 4800000, guid: b6ab4564d413e714c879ce224cac6da6, type: 3}
-  m_ShaderKeywords: 
+  m_Name: "23_\u30AB\u30E9\u30FC\u6BD4\u8F03(\u660E)"
+  m_Shader: {fileID: 4800000, guid: f9515e87e68ec8d45838556d0dddc2d1, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

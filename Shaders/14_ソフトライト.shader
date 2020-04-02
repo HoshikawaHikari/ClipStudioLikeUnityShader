@@ -117,6 +117,9 @@ Shader "ClipStudioLike/UI/14_ソフトライト"
 
                     float2 grabUV = float2(IN.screenPos.xy / IN.screenPos.w);
                     grabUV.y = grabUV.y * _ProjectionParams.x;
+# if UNITY_UV_STARTS_AT_TOP
+                    grabUV.y = 1 - grabUV.y;
+# endif
                     half3 srcColor = tex2D(_GrabTexture, grabUV).rgb;
 
                     //float colorLuminance = (0.298912 * color.r + 0.586611 * color.g + 0.114478 * color.b);

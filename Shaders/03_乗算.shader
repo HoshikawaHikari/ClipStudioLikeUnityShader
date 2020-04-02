@@ -117,6 +117,10 @@ Shader "ClipStudioLike/UI/03_乗算"
 
                     float2 grabUV = float2(IN.screenPos.xy / IN.screenPos.w);
                     //grabUV.y = grabUV.y * -1 + 1;
+                    grabUV.y = grabUV.y * _ProjectionParams.x;
+# if UNITY_UV_STARTS_AT_TOP
+                    grabUV.y = 1 - grabUV.y;
+# endif
                     half3 srcColor = tex2D(_GrabTexture, grabUV).rgb;
 
                     // 乗算

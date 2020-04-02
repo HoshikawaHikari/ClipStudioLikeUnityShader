@@ -117,6 +117,9 @@ Shader "ClipStudioLike/UI/20_ハードミックス"
 
                     float2 grabUV = float2(IN.screenPos.xy / IN.screenPos.w);
                     grabUV.y = grabUV.y * _ProjectionParams.x;
+# if UNITY_UV_STARTS_AT_TOP
+                    grabUV.y = 1 - grabUV.y;
+# endif
                     half3 srcColor = tex2D(_GrabTexture, grabUV).rgb;
                     
                     // 下の色と上の色の各値の合計が255以上なら255、255に満たなければ0
